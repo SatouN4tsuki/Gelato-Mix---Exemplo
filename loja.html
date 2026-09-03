@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelato Mix - Loja & Cardápio</title>
+    <meta name="description" content="Escolha seus gelatos artesanais favoritos na loja Gelato Mix e monte seu pedido.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-loja">
+
+    <!-- Header / Navbar -->
+    <header class="header-loja">
+        <a href="index.html" class="brand">GELATO MIX</a>
+        <div class="user-nav">
+            <button class="cart-btn" onclick="scrollToCarrinho()">
+                🛒 Carrinho <span class="cart-count" id="cartCount">0</span>
+            </button>
+            <a href="login.html" class="btn-logout">Sair</a>
+        </div>
+    </header>
+
+    <!-- Banner Principal -->
+    <section class="loja-hero">
+        <h2>Derreta a rotina com nossos Gelatos!</h2>
+        <p>Escolha seus sabores favoritos e receba onde estiver.</p>
+    </section>
+
+    <!-- Área Principal de Produtos e Carrinho -->
+    <main class="container-loja">
+        
+        <!-- Catálogo de Produtos -->
+        <section class="grid-produtos">
+
+            <div class="card-produto">
+                <div class="card-img">🍓</div>
+                <div class="card-body">
+                    <h3 class="card-title">Gelato de Morango Real</h3>
+                    <p class="card-desc">Feito com morangos frescos selecionados e creme artesanal irresistível.</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 16,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Gelato de Morango Real', 16.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-produto">
+                <div class="card-img">🍫</div>
+                <div class="card-body">
+                    <h3 class="card-title">Gelato Chocolate Intenso</h3>
+                    <p class="card-desc">Cacau 70% com pedaços crocantes de chocolate meio amargo.</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 18,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Gelato Chocolate Intenso', 18.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-produto">
+                <div class="card-img">🍨</div>
+                <div class="card-body">
+                    <h3 class="card-title">Gelato Misto Especial</h3>
+                    <p class="card-desc">O clássico mix de morango, chocolate e creme suave em harmonia perfeita.</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 20,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Gelato Misto Especial', 20.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-produto">
+                <div class="card-img">🍦</div>
+                <div class="card-body">
+                    <h3 class="card-title">Baunilha de Madagascar</h3>
+                    <p class="card-desc">Fava pura de baunilha com textura cremosa inconfundível.</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 15,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Baunilha de Madagascar', 15.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-produto">
+                <div class="card-img">🥜</div>
+                <div class="card-body">
+                    <h3 class="card-title">Gelato de Pistache Premium</h3>
+                    <p class="card-desc">Pistaches italianos torrados e moídos na hora em base aveludada.</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 22,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Gelato de Pistache Premium', 22.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-produto">
+                <div class="card-img">🍋</div>
+                <div class="card-body">
+                    <h3 class="card-title">Sorbet de Limão Siciliano</h3>
+                    <p class="card-desc">Refrescante, leve e 100% natural. Perfeito para os dias quentes.</p>
+                    <div class="card-footer">
+                        <span class="card-price">R$ 14,00</span>
+                        <button class="btn-add" onclick="adicionarAoCarrinho('Sorbet de Limão Siciliano', 14.00)">+ Adicionar</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Sidebar do Carrinho de Compras -->
+        <aside class="sidebar-carrinho" id="carrinhoSection">
+            <h3 class="carrinho-title">Seu Pedido</h3>
+            
+            <div class="itens-carrinho" id="itensCarrinho">
+                <p class="carrinho-vazio">Seu carrinho está vazio.<br>Escolha um gelato ao lado!</p>
+            </div>
+
+            <div class="carrinho-total">
+                <span>Total:</span>
+                <span id="totalValor">R$ 0,00</span>
+            </div>
+
+            <button class="btn-finalizar" onclick="finalizarPedido()">Finalizar Compra</button>
+        </aside>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

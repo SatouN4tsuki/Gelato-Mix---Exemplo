@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gelato Mix - Derreta a Rotina</title>
+    <meta name="description" content="Gelato Mix: gelatos artesanais feitos com ingredientes selecionados. Conheça nossos sabores e peça o seu.">
+
+    <!-- Fontes da marca -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Conectando o arquivo de estilos (CSS) -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Barra de navegação fixa no topo -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="#inicio" class="nav-logo">Gelato Mix</a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#inicio">Início</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#cardapio">Cardápio</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="login.html" class="btn-nav-entrar">Entrar / Comprar</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- A seção "inicio" recebe as imagens de fundo pelo CSS -->
+        <section class="home-container" id="inicio">
+
+            <div class="overlay-content">
+                <!-- Botão que vai levar o usuário para a tela de login -->
+                <a href="login.html" class="btn-entrar" id="btnEntrar">Fazer Login / Comprar</a>
+            </div>
+
+            <!-- Exemplo de como colocar um áudio (opcional) -->
+            <!-- Tire os comentários (<!-- e -- >) se quiser usar e coloque um arquivo na pasta audio -->
+            <!--
+            <audio id="musica-fundo" loop autoplay>
+                <source src="audio/tema-gelato.mp3" type="audio/mpeg">
+            </audio>
+            -->
+
+        </section>
+
+        <!-- Sobre a empresa -->
+        <section class="sobre" id="sobre">
+            <div class="sobre-inner">
+                <div class="sobre-texto">
+                    <h2>Sobre a Gelato Mix</h2>
+                    <p>A Gelato Mix nasceu do sonho de transformar o fim de tarde em um momento especial. Aqui, cada pote é feito à mão, em pequenos lotes, com frutas selecionadas e muito carinho — porque gelato bom não se apressa.</p>
+                    <p>Do clássico ao inusitado, misturamos sabores para você descobrir uma combinação nova sempre que quiser derreter a rotina.</p>
+                </div>
+                <div class="sobre-destaques">
+                    <div class="destaque">
+                        <strong>+20</strong>
+                        <span>sabores artesanais</span>
+                    </div>
+                    <div class="destaque">
+                        <strong>100%</strong>
+                        <span>ingredientes selecionados</span>
+                    </div>
+                    <div class="destaque">
+                        <strong>todo dia</strong>
+                        <span>produção fresquinha</span>
+                    </div>
+                    <div class="destaque">
+                        <strong>na hora</strong>
+                        <span>montado do seu jeito</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prévia do cardápio -->
+        <section class="cardapio-preview" id="cardapio">
+            <h2>Nosso Cardápio</h2>
+            <p class="cardapio-intro">Uma prévia dos sabores que estão te esperando na loja. Entre e monte seu pedido.</p>
+
+            <div class="cardapio-grid">
+                <div class="sabor-card">
+                    <span class="sabor-icone">🍓</span>
+                    <h3>Morango Real</h3>
+                    <p>Feito com morangos frescos selecionados e creme artesanal irresistível.</p>
+                </div>
+                <div class="sabor-card">
+                    <span class="sabor-icone">🍫</span>
+                    <h3>Chocolate Intenso</h3>
+                    <p>Cacau 70% com pedaços crocantes de chocolate meio amargo.</p>
+                </div>
+                <div class="sabor-card">
+                    <span class="sabor-icone">🍨</span>
+                    <h3>Misto Especial</h3>
+                    <p>O clássico mix de morango, chocolate e creme suave em harmonia perfeita.</p>
+                </div>
+                <div class="sabor-card">
+                    <span class="sabor-icone">🍦</span>
+                    <h3>Baunilha de Madagascar</h3>
+                    <p>Fava pura de baunilha com textura cremosa inconfundível.</p>
+                </div>
+                <div class="sabor-card">
+                    <span class="sabor-icone">🥜</span>
+                    <h3>Pistache Premium</h3>
+                    <p>Pistaches italianos torrados e moídos na hora em base aveludada.</p>
+                </div>
+                <div class="sabor-card">
+                    <span class="sabor-icone">🍋</span>
+                    <h3>Sorbet de Limão Siciliano</h3>
+                    <p>Refrescante, leve e 100% natural. Perfeito para os dias quentes.</p>
+                </div>
+            </div>
+
+            <a href="login.html" class="btn-secundario">Ver cardápio completo</a>
+        </section>
+
+        <!-- Contato -->
+        <section class="contato" id="contato">
+            <div class="contato-inner">
+                <h2>Visite a gente</h2>
+                <div class="contato-grid">
+                    <div>
+                        <h3>Endereço</h3>
+                        <p>[Insira aqui o endereço da loja]</p>
+                    </div>
+                    <div>
+                        <h3>Horário de funcionamento</h3>
+                        <p>[Insira aqui os dias e horários]</p>
+                    </div>
+                    <div>
+                        <h3>Fale conosco</h3>
+                        <p>[Insira aqui telefone/WhatsApp]<br>[Insira aqui o @ do Instagram]</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>&copy; 2026 Gelato Mix. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Conectando o arquivo de scripts (JavaScript) -->
+    <script src="js/scripts.js"></script>
+    <!-- Animações do site (rolagem suave do menu) -->
+    <script src="js/animacoes/scroll-menu.js"></script>
+</body>
+</html>
